@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Fish Haven</title>
+
+    <link rel="stylesheet" href="css/newSmall.css" />
+    <link rel="stylesheet" href="css/meduim.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
+  <body>
+    <header class="clearfix">
+      <div class="logoAndTitleContainer">
+        <img src="images/beatifulWeatherlogo.png" alt="beatifulWeatherLogo" />
+        <div class="titleAndMotto">
+          <h1>The Beautiful Outdoors</h1>
+          <div class="motto">Presenting Idaho's Beauty</div>
+        </div>
+      </div>
+    </header>
+    <nav class="sharedNav clearfix">
+      <button class="navButtonContainer" onclick="toggleMenu()">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </button>
+      <ul class="sharedNav hide">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="Preston.html">Preston</a>
+        </li>
+        <li><a href="SodaSprings.html">Soda Springs</a></li>
+        <li class="active">
+          <a class="active" href="#">Fish Haven</a>
+        </li>
+        <li><a href="StormCenter.html">Storm Center</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main class="clearfix">
+      <h2>Fish Haven</h2>
+      <div class="weatherSummarySection">
+        <picture class="heroImage">
+          <source
+            media="(max-width: 545px)"
+            srcset="images/fishHavenImages/heroImage200.jpg"
+          />
+          <source
+            media="(max-width: 1007px)"
+            srcset="images/fishHavenImages/heroImage500.jpg"
+          />
+          <source
+            media="(max-width: 2500px)"
+            srcset="images/fishHavenImages/heroImage800.jpg"
+          />
+          <img src="images/fishHavenImages/heroImage1280.jpg" alt="heroImage" />
+        </picture>
+        <section class="weatherSummary">
+          <h3 class="weatherSummaryHeader">Weather Summary</h3>
+          <div class="weatherDetails">
+            <p>
+              Currently: <span class="currentWeather"></span>
+              <span class="currentTemperature"></span>&#176;F
+            </p>
+            <p>High: <span class="currentHighTemperature"></span>&#176;F</p>
+            <p>Humidity <span class="currentHumidity"></span></p>
+            <p>Wind Speed: <span class="windSpeed"></span>mph</p>
+            <p>Wind Chill: <span class="windChill"></span></p>
+          </div>
+        </section>
+      </div>
+      <section class="fiveDayForecastSection">
+        <h2>5 Day Forecast</h2>
+        <div class="fiveDayForecastIcons">
+          <div class="fiveDayforcastContainers">
+            <h3 class="forcastDay1">_</h3>
+            <img
+              src="https://via.placeholder.com/50X50/1A3820/FFFFFF.png?text=Placeholder"
+              alt="day1"
+              class="forcastIcon1"
+            />
+            <h3 class="forecastTemp1">_</h3>
+          </div>
+          <div class="fiveDayforcastContainers">
+            <h3 class="forcastDay2">_</h3>
+            <img
+              src="https://via.placeholder.com/50X50/1A3820/FFFFFF.png?text=Placeholder"
+              alt="day3"
+              class="forcastIcon2"
+            />
+            <h3 class="forecastTemp2">_</h3>
+          </div>
+          <div class="fiveDayforcastContainers">
+            <h3 class="forcastDay3">_</h3>
+            <img
+              src="https://via.placeholder.com/50X50/1A3820/FFFFFF.png?text=Placeholder"
+              alt="day2"
+              class="forcastIcon3"
+            />
+            <h3 class="forecastTemp3">_</h3>
+          </div>
+          <div class="fiveDayforcastContainers">
+            <h3 class="forcastDay4">_</h3>
+            <img
+              src="https://via.placeholder.com/50X50/1A3820/FFFFFF.png?text=Placeholder"
+              alt="day4"
+              class="forcastIcon4"
+            />
+
+            <h3 class="forecastTemp4">_</h3>
+          </div>
+          <div class="fiveDayforcastContainers">
+            <h3 class="forcastDay5">_</h3>
+            <img
+              src="https://via.placeholder.com/50X50/1A3820/FFFFFF.png?text=Placeholder"
+              alt="day5"
+              class="forcastIcon5"
+            />
+            <h3 class="forecastTemp5">_</h3>
+          </div>
+        </div>
+      </section>
+      <article>
+        <h3>Fish Haven Canyon Road and Hogs Back Trail to Close for Repairs</h3>
+        <picture>
+          <source
+            media="(max-width: 545px)"
+            srcset="images/fishHavenImages/trailImg200.jpg"
+          />
+          <source
+            media="(max-width: 1007px)"
+            srcset="images/fishHavenImages/trailImg500.jpg"
+          />
+          <source
+            media="(max-width: 2500px)"
+            srcset="images/fishHavenImages/trailImg800.jpg"
+          />
+          <img
+            class="articleImg"
+            src="images/fishHavenImages/trailImg1280.jpg"
+            alt="articleImg"
+          />
+        </picture>
+
+        <p>
+          BEAR LAKE, ID – June 15, 2021 – The popular Fish Haven Canyon Road
+          (NFSR 413) and Hogs Back Trail adjacent to Bear Lake, which accesses
+          portions of Forest in the Montpelier Ranger District, will close for
+          repairs beginning June 21. The road and trail will close while heavy
+          equipment is on the road, we ask you to be respectful of the staged
+          equipment.
+        </p>
+        <blockquote>
+          <p>Road Closed | June 21 - June 28</p>
+          <p>Road Open | June 29 - July 5</p>
+
+          <p>Road Closed | July 6-12</p>
+        </blockquote>
+        <p>
+          Anticipated re-opening is July 13. Delays may be possible the week of
+          June 14 as road crews restore areas impacted by illegal travel and
+          prepare for the mobile rock crusher.
+        </p>
+        <div>
+          Original Article at:
+          <cite>
+            <a href="https://www.fs.usda.gov/detail/ctnf/news-events/?cid=FSEPRD923435">
+              United States Department of Agriculture : wwww.fs.usda.gov
+            </a>
+          </cite>
+        </div>
+      </article>
+      <section class="upcomingEvents">
+        <h3>Upcoming Events</h3>
+        <hr />
+      </section>
+    </main>
+    <footer>
+      <div class="mapAndContactInfoContainer">
+        <section class="placeholder">
+          <h3 class="contactInfoHeader">Contact Information</h3>
+          <p>&#9993; beautifulweather@tbw.com</p>
+          <p>&#9742; 111-222-1234</p>
+          <div class="socialMediaContainer">
+            <img
+              class="socialMediaLink"
+              src="images/facebook.png"
+              alt="facebook"
+            />
+            <img
+              class="socialMediaLink"
+              src="images/twitter.png"
+              alt="twitter"
+            />
+            <img
+              class="socialMediaLink"
+              src="images/instagram.png"
+              alt="instagram"
+            />
+          </div>
+        </section>
+        <picture>
+          <source
+            media="(max-width:545px )"
+            srcset="images/fishHavenImages/fishHavenMap200.jpg"
+          />
+          <source
+            media="(max-width:1007px )"
+            srcset="images/fishHavenImages/fishHavenMap500.jpg"
+          />
+          <source media="(max-width:2500px )" srcset="images/fishHavenMap800.jpg" />
+          <img
+            class="locationMap"
+            src="images/fishHavenImages/fishHavenMap800.jpg"
+            alt="footerMap"
+          />
+        </picture>
+      </div>
+      <div class="footerBar">
+        <span>
+          &#169; The Beautiful Outdoors | Attributions :
+          <a href="https://openweathermap.org/">Open Weather Map</a> | Jonathon
+          Gomez</span
+        ><br />
+        <span class="currentDate"></span>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/beautifulWeather.js"></script>
+    <script src="js/townPages.js"></script>
+    <script src="js/fishHaven.js"></script>
+  </body>
+</html>
