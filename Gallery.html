@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="css/newSmall.css" />
+    <link rel="stylesheet" href="css/meduim.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
+  <body>
+    <header class="clearfix">
+      <div class="logoAndTitleContainer">
+        <img src="images/beatifulWeatherlogo.png" alt="beatifulWeatherLogo" />
+        <div class="titleAndMotto">
+          <h1>The Beautiful Outdoors</h1>
+          <div class="motto">Presenting Idaho's Beauty</div>
+        </div>
+      </div>
+    </header>
+    <nav class="sharedNav" class="clearfix">
+      <button class="navButtonContainer" onclick="toggleMenu()">
+        <span class="top"></span>
+        <span class="middle"></span>
+<span class="bottom"></span>
+      </button>
+      <ul class="sharedNav hide">
+        <li><a href="index.html">Home</a></li>
+        <li ><a href="Preston.html">Preston</a></li>
+        <li><a href="SodaSprings.html">Soda Springs</a></li>
+        <li><a href="FishHaven.html">Fish Haven</a></li>
+        <li><a href="StormCenter.html">Storm Center</a></li>
+        <li class="active"><a class="active" href="#">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Weather Gallery</h2>
+      <div class="galleryContainer">
+        <picture
+          ><img
+            src="https://via.placeholder.com/800X500/1A3820/FFFFFF.png?text=Placeholder"
+            data-src="images/galleryImages/stormyField800.jpg"
+            alt="stormyField"
+            class="galleryPics"
+          />
+          <p class="picCaption">A storm brewing above a field</p>
+        </picture>
+        <picture
+          ><img
+            src="https://via.placeholder.com/800X500/1A3820/FFFFFF.png?text=Placeholder"
+            data-src="images/galleryImages/stormyRoad800.jpg"
+            alt="stormyRoad"
+            class="galleryPics"
+          />
+          <p class="picCaption">A storm brewing above a road</p></picture
+        >
+        <picture
+          ><img
+            src="https://via.placeholder.com/800X500/1A3820/FFFFFF.png?text=Placeholder"
+            data-src="images/galleryImages/blizzard800.jpg"
+            alt="blizzard"
+            class="galleryPics"
+          />
+          <p class="picCaption">
+            A blizzard dropping blankets of snow.
+          </p></picture
+        >
+        <picture
+          ><img
+            src="https://via.placeholder.com/800X500/1A3820/FFFFFF.png?text=Placeholder"
+            data-src="images/galleryImages/sunset800.jpg"
+            alt="sunset"
+            class="galleryPics"
+          />
+          <p class="picCaption">A beautiful sunset</p>
+        </picture>
+        <picture
+          ><img
+          src="https://via.placeholder.com/800X500/1A3820/FFFFFF.png?text=Placeholder"
+            data-src="images/galleryImages/windowRain800.jpg"
+            alt="windowRain"
+            class="galleryPics"
+          />
+          <p class="picCaption">A rainstorm</p>
+        </picture>
+        <picture
+          ><img
+          src="https://via.placeholder.com/800X500/1A3820/FFFFFF.png?text=Placeholder"
+            data-src="images/galleryImages/sunsetField800.jpg"
+            alt="sunsetField"
+            class="galleryPics"
+          />
+          <p class="picCaption">A beautiful sunset over the lake</p></picture
+        >
+        <picture
+          ><img
+          src="https://via.placeholder.com/800X500/1A3820/FFFFFF.png?text=Placeholder"
+            data-src="images/galleryImages/partlyCloudy800.jpg"
+            alt="partlyCloudy"
+            class="galleryPics"
+          />
+          <p class="picCaption">
+            Today is going to be a partly cloudy day
+          </p></picture
+        >
+        <picture
+          ><img
+          src="https://via.placeholder.com/800X500/1A3820/FFFFFF.png?text=Placeholder"
+            data-src="images/galleryImages/snowyForrest800.jpg"
+            alt="snowyForrest"
+            class="galleryPics"
+          />
+          <p class="picCaption">Winter time in this forest</p></picture
+        >
+        <picture
+          ><img
+          src="https://via.placeholder.com/800X500/1A3820/FFFFFF.png?text=Placeholder"
+            data-src="images/galleryImages/sunsetClouds800.jpg"
+            alt="sunsetClouds"
+            class="galleryPics"
+          />
+          <p class="picCaption">
+            A sunset brings out color on these stormy clouds
+          </p></picture>
+      </div>
+      <div class="countervisitor"></div>
+    </main>
+    <footer>
+      <div class="mapAndContactInfoContainer">
+        <section class="placeholder">
+          <h3 class="contactInfoHeader">Contact Information</h3>
+          <p>&#9993; beautifulweather@tbw.com</p>
+          <p>&#9742; 111-222-1234</p>
+          <div class="socialMediaContainer">
+            <img
+              class="socialMediaLink"
+              src="images/facebook.png"
+              alt="facebook"
+            />
+            <img
+              class="socialMediaLink"
+              src="images/twitter.png"
+              alt="twitter"
+            />
+            <img
+              class="socialMediaLink"
+              src="images/instagram.png"
+              alt="instagram"
+            />
+          </div>
+        </section>
+      </div>
+      <div class="footerBar">
+        <span>
+          &#169; The Beautiful Outdoors | Attributions | Jonathon Gomez</span
+        ><br />
+        <span class="currentDate"></span>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/beautifulWeather.js"></script>
+    <script src="js/gallery.js"></script>
+  </body>
+</html>
