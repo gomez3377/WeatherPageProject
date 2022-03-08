@@ -1,0 +1,99 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+    /* The Header Bar */
+   
+    .titleAndMotto {
+      font-size: 1.5rem;
+      width: 35rem;
+    }
+  
+    .motto {
+      text-align: left;
+    }
+    /* The navigation bar */
+    .sharedNav ul li {
+      justify-content: center;
+      align-items: center;
+    }
+    .sharedNav ul li a {
+      padding: 0.6rem 1rem;
+      font-size: 1.75rem;
+      
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    .motto {
+      font-size: 1rem;
+    }
+    /* The Main Section */
+  
+    p.articleContent {
+      line-height: 2rem;
+    }
+    /* CSS RULES FOR THE HOME PAGE */
+    .buttonContainer{
+      display: none;
+    }
+    .homeNav {
+      background:none;
+    }
+    .homeNav.hide{
+      
+      top:0;
+    opacity:1
+  }
+  
+    .homeNav ul.hide {
+      display:block
+    }
+    .homeNav ul {
+      transform: translateY(0); 
+      
+      top: 0;
+      float:right;
+      display: flex;
+      background: rgba(25, 56,22, 0.5);
+    }
+    .homeNav ul li:hover {
+      background-color: rgba(85, 166,48, 0.5);
+    }
+    .townCards {
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+    }
+    .townSection, .townSection:nth-child(2n) {
+      flex-direction: column;
+    }
+    .townSection picture {
+      width: 100%;
+    }
+    .townSection picture img {
+      width: 100%;
+    }
+    .homeContactInfoSection .contactInfoHeader {
+      text-align: center;
+    }
+    /* CSS RULES FOR THE GALLERY PAGE */
+   .galleryContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 100%;
+  }
+    /* The Footer  */
+    div.mapAndContactInfoContainer {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  
+    h3.contactInfoHeader {
+      text-align: left;
+    }
+  
+    section.placeholder {
+      width: 75%;
+      text-align: left;
+    }
+   /* CSS RULES FOR THE FORUM PAGE */
+    
+  } /*end large */

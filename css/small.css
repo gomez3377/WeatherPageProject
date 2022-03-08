@@ -1,0 +1,441 @@
+* ---------------------------------------------THE BEAUTFIUL WEATHER CSS STYLESHEET--------------------------------------------------------------- */
+
+/* ---------------------------------------------CSS RULES FOR MOBILE DEVICES------------------------------------------------------------------ */
+
+/* ---------------------------------------------CSS RULES SHARED THROUGHOUT THE PAGES--------------------------------------------------------- */
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.75rem;
+  color: #1a3820;
+}
+
+body,
+.forumTop input {
+  
+  letter-spacing: 0.15rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poiret One", cursive;
+  text-align: center;
+  color: #294f17;
+  padding: 1rem;
+  letter-spacing: 0.25rem;
+  line-height: 3rem;
+}
+
+.logoAndTitleContainer,
+main,
+.mapAndContactInfoContainer,
+.footerBar
+ {
+  margin: 0 auto;
+  max-width: 75%;
+}
+
+  
+
+nav,
+section,
+.fiveDayforcastContainers h3,
+.fiveDayforcastContainers p,
+footer,
+fieldset {
+  background-color: #1a3820;
+}
+
+a,
+section,
+section h2,
+section h3,
+hr,
+.forumTop,
+.forumSbs,
+footer,
+.forumTop input,
+.homePageTitle1, .homePageTitle2 {
+  color: #fff;
+}
+
+.logoAndTitleContainer {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+}
+.logoAndTitleContainer img,
+.titleAndMotto,
+.fiveDayforcastContainers {
+  display: flex;
+}
+.titleAndMotto,
+.fiveDayforcastContainers {
+  flex-direction: column;
+  align-items: center;
+}
+nav ul li a {
+  text-decoration: none;
+}
+footer{
+  position: relative;
+}
+/* ---------------------------------------------CSS RULES SPECIFIC TO THE TOWN PAGES--------------------------------------------------------- */
+
+.banner {
+  display: none;
+}
+
+.logoAndTitleContainer img {
+  justify-self: center;
+  align-self: center;
+  width: 5rem;
+}
+
+picture img {
+  width: 100%;
+}
+
+nav button span,
+.buttonContainer span,
+.fiveDayforcastContainers {
+  background: #fff;
+}
+
+/*----------------------------------------------HEADER----------------------------------------------------------------------------------------*/
+
+.weatherSummary,
+.townInfoContainer,
+fieldset {
+  margin: 3rem 0;
+	padding: 1rem 2rem;
+}
+
+/* .fiveDayforcastContainers p {
+  padding: 1rem;
+} */
+
+.upcomingEvents p {
+  padding: 1rem 2rem;
+  margin: 0;
+}
+nav button,
+  nav button span,
+  .buttonContainer span,
+  .forumTop input
+  {
+  border: none;
+
+}
+nav button {
+  margin: 1rem 5%;
+  background: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  height: 27px;
+  width: 35px;
+  position: relative;
+  
+  
+}
+nav button span,
+.buttonContainer span {
+  
+  border-radius: 15rem;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  transition: 200ms ease-in;
+}
+nav button span:nth-of-type(2) {
+  top: 11px
+}
+nav button span:nth-of-type(3) {
+  top: 22px
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a,
+.forumTop,
+.forumSbs,
+.forumTop input {
+  display: block;
+}
+
+nav ul li a {
+  padding: 1.75rem 5%;
+  font-size: 1.5rem;
+  letter-spacing: 0.25rem;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+h2 {
+	font-size: 2em;
+	margin-bottom: 0;
+}
+.fiveDayforcastContainers img {
+  width: 25%;
+}
+
+cite a {
+  color: #1a3820;
+}
+.motto {
+	margin-bottom: 2rem;
+}
+
+.socialMediaContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 3rem 0;
+}
+
+nav ul li {
+  transition: background-color 400ms ease-in-out;
+}
+
+nav ul li.active {
+  background-color: #fff;
+}
+nav ul li a.active {
+  color: #1a3820;
+} 
+nav ul li:hover{
+  background-color: #55a630;
+}
+nav ul li a:hover{
+color: #fff;
+}
+nav ul.hide {
+  display: none;
+}
+.buttonContainer span:nth-of-type(2){
+  top: 11px;
+}
+.buttonContainer span:nth-of-type(3){
+  top: 22px;
+  
+}
+.top.active {
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  transition:  200ms ease-in;
+
+}
+.middle.active  {
+  opacity: 0;
+  transition:  200ms ease-in;
+}
+.bottom.active {
+  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  transition:  200ms ease-in;
+}
+article p {
+  margin-bottom: 3rem;
+  line-height: 2.25rem;
+}
+
+.forumTop input {
+  padding: 0.75rem;
+  max-width: 15rem;
+  border-radius: 1.5rem;
+  border: none;
+  background: rgba(255, 255,255,0.1);
+  font-size: 1.25rem;
+}
+.submitBtn {
+  margin: 5% 0;
+  padding: 1rem;
+  width: 100%;
+  max-width: 20rem;
+  background: #1a3820;
+  color: #fff;
+  font-family: "Poiret One", cursive;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  transition: 250ms background ease-in-out;
+}
+
+.submitBtn:hover {
+  background: #55a630;
+}
+.forumTop input:required {
+  background: rgba(239, 35, 60, 0.4); 
+}
+.forumTop input:required:valid{
+  background: rgba(85, 166, 48, 0.4);
+}
+fieldset{
+  border: none;
+  border-radius: 1.5rem;
+}
+
+.forumSbs,
+.forumTop {
+  margin: 2rem 1rem;
+}
+
+.galleryContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  
+}
+picture {
+  width: 85%;
+}
+img.galleryPics {
+  width: 100%;
+  transition: box-shadow 200ms ease-in-out;
+}
+
+img.galleryPics:hover {
+  box-shadow: 0 0 50px #1a3820;
+}
+
+.picCaption {
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.25rem;
+  color: #1a3820;
+  padding: 1rem;
+}
+.homePageHeader {
+  display: flex;
+  margin: 0;
+  position: relative;
+  height: 50vh;
+  justify-content: center;
+  flex-direction: column;
+}
+.homeHeroImg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.homeHeroImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  margin: 0;
+  width: 4rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.homeNav {
+  background: rgba(26,56,32,0.9);
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+  transition: 200ms ease-in;
+ 
+  opacity: 1;
+
+}
+.buttonContainer {
+  position: absolute;
+  top: 3%;
+  right: 4%;
+  cursor: pointer;
+  height: 27px;
+  width: 35px;
+  background: none;
+  border: none;
+  z-index: 2;
+}
+.homeNav ul li {
+	transition: background-color 400ms ease-in-out;
+}
+.homeNav ul li:hover {
+  background-color: #55a630;
+}
+.homeNav.hide {
+  opacity: 0;
+  top: -100%;
+  transition: 200ms ease-in;
+}
+.homeNav.show {
+  transition: 200ms ease-in;
+
+}
+.homeNav ul {
+  transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+}
+
+.homePageTitle1, .homePageTitle2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+}
+.townSection {
+	background: #1a3820;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+.townSection h2 {
+  margin-bottom: 0;
+  padding: 1rem;
+}
+.townSection p {
+  text-align: center;
+}
+.townSection p:first-of-type{
+  font-size: 0.75rem;
+  letter-spacing: 0.1rem;
+  margin-top: 0.1rem;
+  padding: 1rem;
+}
+.townSection picture img {
+  width: 100%;
+  border-radius: 2rem;
+}
+.townSection picture {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.upcomingEvents {
+	margin: 0 auto;
+	margin-bottom: 3rem;
+	max-width: 40rem;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.logo {
+  margin: 0;
+  width: 4rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}

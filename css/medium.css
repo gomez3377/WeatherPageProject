@@ -1,0 +1,129 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+    header h1 {
+      font-size: 3rem;
+    }
+    .motto {
+      font-size: 1.25em;
+    }
+    .sharedNav {
+      display: flex;
+      justify-content: center;
+    }
+  
+    nav.sharedNav button {
+      display: none;
+    }
+    .sharedNav.hide {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(6, 1fr);
+      text-align: center;
+    }
+   
+    .sharedNav ul li a {
+      border: none;
+      padding: 0.8rem 1rem;
+      font-size: 1.5em;
+      letter-spacing: 0.1rem;
+    }
+    header {
+      display: flex;
+      justify-content: center;
+    }
+    header img {
+      justify-content: end;
+    }
+    .weatherSummarySection {
+      position: relative;
+    }
+    .weatherSummary {
+      position: absolute;
+      top: -21px;
+      left: 21px;
+      background: rgba(25, 56, 22, 0.2);
+      border-radius: 10px;
+      z-index: 2;
+      border: none;
+      backdrop-filter: blur(2.5px);
+      padding: 2%;
+    }
+    .weatherSummaryHeader {
+      color: white;
+      margin-bottom: 0.5rem;
+    }
+    div.weatherDetails {
+      background: none;
+      padding-top: 0.25rem;
+    }
+  
+    
+    .fiveDayForecastIcons {
+      display: flex;
+      justify-content: space-evenly;
+      background-color: #fff;
+    }
+  
+    
+    img.forcastIcons {
+      width: 100%;
+    }
+    img.articleImg {
+      float: right;
+      right: 5rem;
+      width: 25%;
+      padding: 0 1rem;
+    }
+    /* CSS RULES FOR THE HOME PAGE */
+    .logo {
+      width: 5rem;
+    }
+    .buttonContainer {
+      top:5%;
+      right: 5%;
+    }
+    
+    .townSection {
+      display: flex;
+      flex-direction: row;
+    }
+    .townSection:nth-child(2n) {
+      flex-direction: row-reverse;
+    }
+    .townSection picture {
+      width: 50%;
+    }
+    .townSection picture img {
+      width: 75%;
+    }
+    /* CSS RULES FOR THE GALLERY PAGE */
+    .galleryContainer {
+      display: grid;
+      justify-items: center;
+      grid-template-columns: 1fr 1fr;
+      max-width: 100%;
+  }
+   
+   
+   /* CSS RULES FOR THE FOOTER */
+    img.socialMediaLink {
+      width: 5%;
+    }
+    /* CSS RULES FOR THE FORUM PAGE */
+    form {
+      max-width: 25rem;
+      margin: 0 auto;
+    }
+    fieldset {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .forumTop {
+      text-align: center;
+    }
+   
+    .fiveDayforcastContainers img {
+      width: 80%;
+    }
+  } /*end medium */
