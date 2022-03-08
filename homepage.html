@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beautiful Weather</title>
+    <link rel="stylesheet" href="css/newSmall.css" />
+    <link rel="stylesheet" href="css/meduim.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
+  <body>
+    <header  class="clearfix homePageHeader">
+      <img
+        src="images/beatifulWeatherlogo.png"
+        alt="beatifulWeatherLogo"
+        class="logo"
+      />
+      <picture class="homeHeroImg">
+        <source media="(max-width: 200px )" srcset="images/homePageImages/homeHeroImg200.jpg" />
+        <source media="(max-width: 500px )" srcset="images/homePageImages/homeHeroImg500.jpg" />
+        <source media="(max-width: 800px )" srcset="images/homePageImages/homeHeroImg800.jpg" />
+        <source media="(max-width: 1200px )" srcset="images/homePageImages/homeHeroImg1280.jpg" />
+        <img  src="images/homePageImages/homeHeroimg.jpg" alt="homeHeroImg" />
+      </picture>
+      <button onclick="toggleMenu()" class="buttonContainer">
+        
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </button>
+      <nav class="homeNav hide">
+        <ul>
+          
+          <li><a href="Preston.html">Preston</a></li>
+          <li><a href="SodaSprings.html">Soda Springs</a></li>
+          <li><a href="FishHaven.html">Fish Haven</a></li>
+          <li><a href="StormCenter.html">Storm Center</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    
+      
+
+        <h1 class="homePageTitle1">Welcome To</h1>
+        <h1 class="homePageTitle2">The Beautiful Outdoors</h1>
+     
+       
+
+        
+
+    </header>
+    <main class="clearfix">
+      
+      <article>
+        <h2>Hello!</h2>
+        <p>
+          Are you planning a trip down to Preston Idaho and want to know the weather down there?
+          Do you want to know all to local events going on in Soda Springs for you and your family or your friends?
+          You have come to the right place.
+          At The Beautiful Outdoors, we offer accurate weather and storm reports for each of the towns here in Southern Idaho.
+          Not only we provide accurate weather but we also provide top notch information for each of the towns in the area so you, your family, and your friends can plan your next adventure.
+        </p>
+      </article>
+      <div class="townCards"></div>
+    </main>
+    <footer>
+      <img
+        src="images/beatifulWeatherlogo.png"
+        alt="beatifulWeatherLogo"
+        class="logo"
+      />
+      <h1 class="homePageTitle2">The Beautiful Outdoors</h1>      
+      <div class="mapAndContactInfoContainer">
+        <section class="placeholder">
+          <h3 class="contactInfoHeader">Contact Information</h3>
+          <p>&#9993; beautifulweather@tbw.com</p>
+          <p>&#9742; 111-222-1234</p>
+          <div class="socialMediaContainer">
+            <img
+              class="socialMediaLink"
+              src="images/facebook.png"
+              alt="facebook"
+            />
+            <img
+              class="socialMediaLink"
+              src="images/twitter.png"
+              alt="twitter"
+            />
+            <img
+              class="socialMediaLink"
+              src="images/instagram.png"
+              alt="instagram"
+            />
+          </div>
+        </section>
+      </div>
+      <div class="footerBar">
+        <span>
+          &#169; The Beautiful Outdoors | Attributions | Jonathon Gomez</span
+        ><br />
+        <span class="currentDate"></span>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/beautifulWeather.js"></script>
+    <script src="js/homePage.js"></script>
+  </body>
+</html>
