@@ -8,9 +8,13 @@
     <!-- <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/meduim.css" />
     <link rel="stylesheet" href="css/large.css" /> -->
+    
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/41db2b67ea.js" crossorigin="anonymous"></script>
 
+    
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
   </head>
   <body>
     <header  class="homePageHeader">
@@ -24,13 +28,13 @@
       </div>
       <div class="right-side-header">
 
-        <button onclick="toggleMenu()" class="buttonContainer">
+        <button onclick="toggleMenu()" class="button-container">
           
           <span class="top"></span>
           <span class="middle"></span>
           <span class="bottom"></span>
         </button>
-        <nav class="homeNav hide">
+        <nav class="home-nav hide">
           <ul>
             
             <li><a href="Preston.html">Preston</a></li>
@@ -42,18 +46,15 @@
         </nav>
       </div>
     </header>
-    
-    <picture class="homeHeroImg">
+    <!-- <picture class="homeHeroImg">
       <source media="(max-width: 200px )" srcset="images/homePageImages/homeHeroImg200.jpg" />
       <source media="(max-width: 500px )" srcset="images/homePageImages/homeHeroImg500.jpg" />
       <source media="(max-width: 800px )" srcset="images/homePageImages/homeHeroImg800.jpg" />
       <source media="(max-width: 1200px )" srcset="images/homePageImages/homeHeroImg1280.jpg" />
       <img  src="images/homePageImages/homeHeroimg.jpg" alt="homeHeroImg" />
-    </picture>
+    </picture> -->
     
-
-        <h1 class="homePageTitle1">Welcome To</h1>
-        <h1 class="homePageTitle2">The Beautiful Outdoors</h1>
+    
      
        
 
@@ -61,6 +62,11 @@
 
     <main class="clearfix">
       
+    <div class="hero-image">
+      <h1 class="homePageTitle1">Welcome To</h1>
+      <h1 class="homePageTitle2">The Beautiful Outdoors</h1>
+
+    </div>
       <article>
         <h2>Hello!</h2>
         <p>
@@ -86,21 +92,9 @@
           <p>&#9993; beautifulweather@tbw.com</p>
           <p>&#9742; 111-222-1234</p>
           <div class="socialMediaContainer">
-            <img
-              class="socialMediaLink"
-              src="images/facebook.png"
-              alt="facebook"
-            />
-            <img
-              class="socialMediaLink"
-              src="images/twitter.png"
-              alt="twitter"
-            />
-            <img
-              class="socialMediaLink"
-              src="images/instagram.png"
-              alt="instagram"
-            />
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
           </div>
         </section>
       </div>

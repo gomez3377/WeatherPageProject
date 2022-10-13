@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&family=Poiret+One&family=Spinnaker&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --primary-color:#85C190;
   --darker-color:#3F644B;
@@ -6,12 +13,14 @@
   --accent-color:#058ED9;
   --shared-transition: all 0.4s ease-in-out;
   --shared-border-radius: 20px;
-  --serif-font: serif;
-  --sans-serif-font: sans-serif;
+  --IM-Fell-Double-Pica-font: "IM Fell Double Pica" serif;
+  --Spinnaker-font: "Spinnaker", sans-serif;
+  --Poiret-One-font:"Poiret One", cursive;
 }
 
 body {
-  font-family: var(--serif-font);
+  font-family: var(--Spinnaker-font);
+  font-size: 62.5%;
 }
 
 header {
@@ -24,9 +33,47 @@ header {
 }
 header .left-side-header {
   width: 50%;
-  margin-top: 1rem;
   margin-left: 1rem;
 }
 header .right-side-header {
+  display: flex;
+  align-items: center;
   width: 50%;
+  margin-right: 1rem;
+}
+header .right-side-header .button-container {
+  display: none;
+}
+header .right-side-header .home-nav ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+header .right-side-header .home-nav ul li {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin: 0.5rem;
+}
+header .right-side-header .home-nav ul li a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.hero-image {
+  width: 100%;
+  height: 300px;
+  background-image: url(../images/homePageImages/homeHeroImg1280.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-family: var(--Poiret-One-font);
+}
+
+article {
+  margin: 0 3rem;
 }/*# sourceMappingURL=main.css.map */
