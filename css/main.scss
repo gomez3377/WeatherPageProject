@@ -1,80 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&family=Poiret+One&family=Spinnaker&display=swap');
-*, *::before, *::after{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&family=Poiret+One&family=Spinnaker&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-:root{
-    --primary-color:#85C190;
-    --darker-color:#3F644B;
-    --white:#FCFAFA;
-    --black:#262626;
-    --accent-color:#058ED9;
-    --shared-transition: all 0.4s ease-in-out;
-    --shared-border-radius: 20px;
-    --IM-Fell-Double-Pica-font: "IM Fell Double Pica" serif;
-    --Spinnaker-font: "Spinnaker", sans-serif;
-    --Poiret-One-font:"Poiret One", cursive;
-}
-
-body{
-    font-family: var(--Spinnaker-font);
-    font-size: 62.5%;
+:root {
+  --primary-color: #85c190;
+  --darker-color: #3f644b;
+  --white: #fcfafa;
+  --black: #262626;
+  --accent-color: #058ed9;
+  --shared-transition: all 0.4s ease-in-out;
+  --shared-border-radius: 20px;
+  --IM-Fell-Double-Pica-font: "IM Fell Double Pica", serif;
+  --Spinnaker-font: "Spinnaker", sans-serif;
+  --Poiret-One-font: "Poiret One", cursive;
 }
 
-header{
-    position: fixed;
-    width: 100%;
-    height: 10rem;
+body {
+  font-family: var(--Spinnaker-font);
+  font-size: 62.5%;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  background-color: var(--primary-color);
+  justify-content: space-between;
+  .left-side-header {
+    width: 50%;
+
+    margin-left: 1rem;
+  }
+  .right-side-header {
     display: flex;
-    background-color: var(--primary-color);
-    justify-content: space-between;
-    .left-side-header{
-        width: 50%;
-        
-        margin-left: 1rem;
-    }
-    .right-side-header{
-        display: flex;
-        align-items: center;
-        width: 50%;
-        margin-right: 1rem;
-        .button-container{
-            display:none;
-        }
-        .home-nav{
-           ul{
-            display: flex;
-            list-style: none;
-            flex-wrap: nowrap;
-            align-items: center;
-            li{
-                font-size: 1.5rem;
-                text-align: center;
-                margin-top: 1rem;
-                margin: 0.5rem;
-                a{
-                    color: var(--black);
-                    text-decoration: none;
-
-                }
-            }
-           }
-        }
-    }
-}
-.hero-image{
-    width: 100%;
-    height: 300px;
-    background-image: url(../images/homePageImages/homeHeroImg1280.jpg);
-    object-fit: cover;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    color: var(--white);
-    font-family: var(--Poiret-One-font);
+    width: 50%;
+    margin-right: 1rem;
+    .button-container {
+      display: none;
+    }
+    .home-nav {
+      ul {
+        display: flex;
+        list-style: none;
+        flex-wrap: nowrap;
+        align-items: center;
+        li {
+          font-size: 1.5rem;
+          text-align: center;
+          margin-top: 1rem;
+          margin: 0.5rem;
+          a {
+            color: var(--black);
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
 }
-article{
-    margin: 0 3rem;
-    
+.hero-image {
+  width: 100%;
+  height: 300px;
+  background-image: url(../images/homePageImages/homeHeroImg1280.jpg);
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-family: var(--Poiret-One-font);
+  h1 {
+    font-size: 3rem;
+  }
+}
+article {
+  margin: 1rem 3rem;
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+  }
+  p {
+    font-size: 1.25rem;
+    text-align: justify;
+    letter-spacing: 1.5px;
+    line-height: 2.5rem;
+    color: var(--black);
+  }
+}
+
+footer {
+  height: fit-content;
+  background-color: var(--darker-color);
+  color: var(--white);
+  position: relative;
+
+  h1 {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    font-size: 1.75rem;
+    font-family: var(--Poiret-One-font);
+    letter-spacing: 2px;
+  }
+  .contact-info-container {
+    margin: 0 auto;
+    width: 50%;
+    max-width: 500px;
+    font-size: 1rem;
+  }
+  .footer-bar {
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem auto;
+    span {
+      margin-bottom: 2rem;
+    }
+  }
 }
