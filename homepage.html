@@ -5,43 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beautiful Weather</title>
-    <link rel="stylesheet" href="css/small.css" />
+    <!-- <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/meduim.css" />
-    <link rel="stylesheet" href="css/large.css" />
+    <link rel="stylesheet" href="css/large.css" /> -->
+
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="css/normalize.css" />
   </head>
   <body>
-    <header  class="clearfix homePageHeader">
-      <img
+    <header  class="homePageHeader">
+      <div class="left-side-header">
+
+        <img
         src="images/beatifulWeatherlogo.png"
         alt="beatifulWeatherLogo"
         class="logo"
-      />
-      <picture class="homeHeroImg">
-        <source media="(max-width: 200px )" srcset="images/homePageImages/homeHeroImg200.jpg" />
-        <source media="(max-width: 500px )" srcset="images/homePageImages/homeHeroImg500.jpg" />
-        <source media="(max-width: 800px )" srcset="images/homePageImages/homeHeroImg800.jpg" />
-        <source media="(max-width: 1200px )" srcset="images/homePageImages/homeHeroImg1280.jpg" />
-        <img  src="images/homePageImages/homeHeroimg.jpg" alt="homeHeroImg" />
-      </picture>
-      <button onclick="toggleMenu()" class="buttonContainer">
-        
-        <span class="top"></span>
-        <span class="middle"></span>
-        <span class="bottom"></span>
-      </button>
-      <nav class="homeNav hide">
-        <ul>
+        />
+      </div>
+      <div class="right-side-header">
+
+        <button onclick="toggleMenu()" class="buttonContainer">
           
-          <li><a href="Preston.html">Preston</a></li>
-          <li><a href="SodaSprings.html">Soda Springs</a></li>
-          <li><a href="FishHaven.html">Fish Haven</a></li>
-          <li><a href="StormCenter.html">Storm Center</a></li>
-          <li><a href="Gallery.html">Gallery</a></li>
-        </ul>
-      </nav>
+          <span class="top"></span>
+          <span class="middle"></span>
+          <span class="bottom"></span>
+        </button>
+        <nav class="homeNav hide">
+          <ul>
+            
+            <li><a href="Preston.html">Preston</a></li>
+            <li><a href="SodaSprings.html">Soda Springs</a></li>
+            <li><a href="FishHaven.html">Fish Haven</a></li>
+            <li><a href="StormCenter.html">Storm Center</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     
-      
+    <picture class="homeHeroImg">
+      <source media="(max-width: 200px )" srcset="images/homePageImages/homeHeroImg200.jpg" />
+      <source media="(max-width: 500px )" srcset="images/homePageImages/homeHeroImg500.jpg" />
+      <source media="(max-width: 800px )" srcset="images/homePageImages/homeHeroImg800.jpg" />
+      <source media="(max-width: 1200px )" srcset="images/homePageImages/homeHeroImg1280.jpg" />
+      <img  src="images/homePageImages/homeHeroimg.jpg" alt="homeHeroImg" />
+    </picture>
+    
 
         <h1 class="homePageTitle1">Welcome To</h1>
         <h1 class="homePageTitle2">The Beautiful Outdoors</h1>
@@ -50,7 +59,6 @@
 
         
 
-    </header>
     <main class="clearfix">
       
       <article>
